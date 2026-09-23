@@ -64,7 +64,7 @@ Se hela inköpslistan i [`hardware/inkopslista/inkopslista.pdf`](hardware/inkops
 
 ## Licens
 
-Ingen licens är vald ännu. Lägg till en [`LICENSE`](https://choosealicense.com/)-fil innan ni delar koden brett om ni vill klargöra hur andra får använda materialet (t.ex. MIT för öppen återanvändning).
+Detta projekt är licensierat under **MIT-licensen** – se [`LICENSE`](LICENSE). Det innebär i korthet att vem som helst får använda, kopiera, ändra och dela koden/materialet, även kommersiellt, så länge ursprungligt copyright-meddelande behålls. Programvaran ges utan garantier.
 
 ## Bidra
 
