@@ -17,10 +17,6 @@ En solcellsdriven boj som mäter vattentemperatur på flera djup i en insjö och
 - Kommunicerar via **LoRa (868 MHz)**, ca 100 m genom vegetation, till en mottagare
 - Kommunikation sker alltid **boj → mottagare → server** (push), aldrig tvärtom
 
-> Se [`docs/projektsammanfattning.md`](docs/projektsammanfattning.md) för den senaste, fullständiga versionen.
-
-Fullständiga krav finns i [`docs/syfte-och-krav.md`](docs/syfte-och-krav.md) och en mer utförlig sammanfattning (inkl. förankringsberäkning) i [`docs/projektsammanfattning.md`](docs/projektsammanfattning.md).
-
 ## Arkitektur
 
 ```
@@ -37,8 +33,6 @@ Mottagaren står fast vid sjön. Servern kan flytta med användaren till andra n
 ## CAD
 
 Höljet och de mekaniska delarna designas i Onshape: se [`cad/onshape-link.md`](cad/onshape-link.md) för länk och status.
-
-kod för NAS/server-sidan som publicerar datan på hemsidan.
 
 ## Hårdvara (sammanfattning)
 
