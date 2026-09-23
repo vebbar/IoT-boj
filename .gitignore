@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python (ev. serverkod/analys)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Arduino/PlatformIO (ev. ESP32-firmware)
+.pio/
+build/
+
+# Miljövariabler / hemligheter — LÄGG ALDRIG DESSA I REPOT
+.env
+*.env
+secrets.*
+*_secrets.*
+wifi_credentials.*
+config.local.*
+
+# 3D-print slicer-projektfiler (kan vara stora binärer)
+*.3mf.bak
