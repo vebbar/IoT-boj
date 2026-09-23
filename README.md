@@ -53,8 +53,6 @@ kod för NAS/server-sidan som publicerar datan på hemsidan.
 - Waveshare ESP32-S3-POE-ETH
 - extern SX1276 LoRa-modul
 
-Se hela inköpslistan i [`hardware/inkopslista/inkopslista.pdf`](hardware/inkopslista/inkopslista.pdf) (obs: listan speglar ett tidigare hårdvaruval med Raspberry Pi som mottagare — den slutgiltiga mottagaren är nu Waveshare ESP32-S3-POE-ETH, se ovan).
-
 **Regulatoriskt:** Sändare på 868 MHz, duty cycle max 1 % i bandet 868,0–868,6 MHz (~36 sek/timme) enligt PTS.
 
 ## Kända öppna frågor / risker
