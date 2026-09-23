@@ -1,6 +1,6 @@
 # IoT-boj – temperaturmätning i insjö
 
-> 🚧 **Status: pågående projekt.** Detta repo speglar var projektet befinner sig just nu – hårdvaruval och krav är på plats, men kod, CAD och testning är inte klara ännu. Bidrag, förslag och issues är välkomna!
+> **Status: pågående projekt.** Detta repo speglar var projektet befinner sig just nu – hårdvaruval och krav är på plats, men kod, CAD och testning är inte klara ännu. Bidrag, förslag och issues är välkomna!
 
 ## Syfte
 
@@ -8,16 +8,16 @@ En solcellsdriven boj som mäter vattentemperatur på flera djup i en insjö och
 
 ## Krav och funktion i korthet
 
-- Mäter vattentemperatur på tre djup: **0,3 m, 1 m, 2 m**, monterade på ett 2 m långt aluminiumrör under bojen
+- Mäter vattentemperatur på tre djup: **-0,3 m, -1 m, -2 m**, monterade på ett 2 m långt aluminiumrör under bojen
 - Skickar temperatur + batteristatus **en gång i timmen**
 - Placeras i allmänt vatten → ska vara **hyfsat billig** (risk för vandalisering/stöld)
 - Ute **året runt i Stockholmsområdet** → måste tåla kyla
 - Höljet **3D-printas**
 - Strömförsörjs via **solcell (6 V/2 A) + 2x 18650-batteri**
 - Kommunicerar via **LoRa (868 MHz)**, ca 100 m genom vegetation, till en mottagare
-- Kommunikation sker alltid **boj/mottagare → NAS/server** (push), aldrig tvärtom
+- Kommunikation sker alltid **boj → mottagare → server** (push), aldrig tvärtom
 
-> Se [`docs/projektsammanfattning.md`](docs/projektsammanfattning.md) för den senaste, fullständiga versionen (tidigare djupangivelser -0,2/-1/-2 m är ersatta av 0,3/1/2 m).
+> Se [`docs/projektsammanfattning.md`](docs/projektsammanfattning.md) för den senaste, fullständiga versionen.
 
 Fullständiga krav finns i [`docs/syfte-och-krav.md`](docs/syfte-och-krav.md) och en mer utförlig sammanfattning (inkl. förankringsberäkning) i [`docs/projektsammanfattning.md`](docs/projektsammanfattning.md).
 
@@ -43,7 +43,7 @@ firmware/boj/                 Firmware för bojen (PlatformIO/Arduino)
 firmware/mottagare/           Firmware för mottagaren (PlatformIO/Arduino)
 ```
 
-Kommer läggas till efter hand: 3D-CAD-filer för höljet, samt kod för NAS/server-sidan som publicerar datan på hemsidan.
+kod för NAS/server-sidan som publicerar datan på hemsidan.
 
 ## Hårdvara (sammanfattning)
 
@@ -55,7 +55,8 @@ Kommer läggas till efter hand: 3D-CAD-filer för höljet, samt kod för NAS/ser
 - INA219 för batteritelemetri
 
 **Mottagare**
-- Waveshare ESP32-S3-POE-ETH + extern SX1276 LoRa-modul
+- Waveshare ESP32-S3-POE-ETH
+- extern SX1276 LoRa-modul
 
 Se hela inköpslistan i [`hardware/inkopslista/inkopslista.pdf`](hardware/inkopslista/inkopslista.pdf) (obs: listan speglar ett tidigare hårdvaruval med Raspberry Pi som mottagare — den slutgiltiga mottagaren är nu Waveshare ESP32-S3-POE-ETH, se ovan).
 
