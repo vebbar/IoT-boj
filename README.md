@@ -34,14 +34,9 @@ Fullständiga krav finns i [`docs/syfte-och-krav.md`](docs/syfte-och-krav.md) oc
 
 Mottagaren står fast vid sjön. Servern kan flytta med användaren till andra nät – därför initieras kommunikationen alltid från mottagaren mot servern, aldrig tvärtom.
 
-## Innehåll i repot
+## CAD
 
-```
-docs/                         Krav- och projektdokumentation
-hardware/inkopslista/         Inköpslista för elektronik/IoT-komponenter
-firmware/boj/                 Firmware för bojen (PlatformIO/Arduino)
-firmware/mottagare/           Firmware för mottagaren (PlatformIO/Arduino)
-```
+Höljet och de mekaniska delarna designas i Onshape: se [`cad/onshape-link.md`](cad/onshape-link.md) för länk och status.
 
 kod för NAS/server-sidan som publicerar datan på hemsidan.
 
